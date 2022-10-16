@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening1", "Oefening1\Oefening1.csproj", "{C0AB5F09-4854-47BA-B3BB-A7BB86C2A4E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening2", "Oefening2\Oefening2.csproj", "{C6A0348B-82F3-4470-B13B-9A9D536FE189}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0AB5F09-4854-47BA-B3BB-A7BB86C2A4E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0AB5F09-4854-47BA-B3BB-A7BB86C2A4E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0AB5F09-4854-47BA-B3BB-A7BB86C2A4E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0AB5F09-4854-47BA-B3BB-A7BB86C2A4E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A0348B-82F3-4470-B13B-9A9D536FE189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A0348B-82F3-4470-B13B-9A9D536FE189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A0348B-82F3-4470-B13B-9A9D536FE189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A0348B-82F3-4470-B13B-9A9D536FE189}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {995295F0-3C29-424B-A4F5-C9FB2AA5FC89}
+	EndGlobalSection
+EndGlobal
