@@ -236,6 +236,7 @@
             this.btn_copy_obj.TabIndex = 23;
             this.btn_copy_obj.Text = "Copy";
             this.btn_copy_obj.UseVisualStyleBackColor = true;
+            this.btn_copy_obj.Click += new System.EventHandler(this.btn_copy_obj_Click);
             // 
             // btn_aanwezig_obj
             // 
@@ -245,6 +246,7 @@
             this.btn_aanwezig_obj.TabIndex = 22;
             this.btn_aanwezig_obj.Text = "Is aanwezig?";
             this.btn_aanwezig_obj.UseVisualStyleBackColor = true;
+            this.btn_aanwezig_obj.Click += new System.EventHandler(this.btn_aanwezig_obj_Click);
             // 
             // btn_toon_obj
             // 
@@ -254,6 +256,7 @@
             this.btn_toon_obj.TabIndex = 21;
             this.btn_toon_obj.Text = "Toon";
             this.btn_toon_obj.UseVisualStyleBackColor = true;
+            this.btn_toon_obj.Click += new System.EventHandler(this.btn_toon_obj_Click);
             // 
             // btn_leegmaken_obj
             // 
@@ -263,6 +266,7 @@
             this.btn_leegmaken_obj.TabIndex = 20;
             this.btn_leegmaken_obj.Text = "Leegmaken";
             this.btn_leegmaken_obj.UseVisualStyleBackColor = true;
+            this.btn_leegmaken_obj.Click += new System.EventHandler(this.btn_leegmaken_obj_Click);
             // 
             // btn_verwijderen_obj
             // 
@@ -272,6 +276,7 @@
             this.btn_verwijderen_obj.TabIndex = 19;
             this.btn_verwijderen_obj.Text = "Verwijderen";
             this.btn_verwijderen_obj.UseVisualStyleBackColor = true;
+            this.btn_verwijderen_obj.Click += new System.EventHandler(this.btn_verwijderen_obj_Click);
             // 
             // btn_toevoegen_obj
             // 
@@ -281,6 +286,7 @@
             this.btn_toevoegen_obj.TabIndex = 18;
             this.btn_toevoegen_obj.Text = "Toevoegen";
             this.btn_toevoegen_obj.UseVisualStyleBackColor = true;
+            this.btn_toevoegen_obj.Click += new System.EventHandler(this.btn_toevoegen_obj_Click);
             // 
             // tb_res_int
             // 

@@ -19,6 +19,7 @@ namespace Oefening2
 
         Stapel<int> listInt = new Stapel<int>();
         Stapel<String> listString = new Stapel<String>();
+        Stapel<TestClass> listObj = new Stapel<TestClass>();
 
         private void btn_toevoegen_int_Click(object sender, EventArgs e)
         {
@@ -37,7 +38,7 @@ namespace Oefening2
         private void btn_leegmaken_int_Click(object sender, EventArgs e)
         {
            listInt.Leegmaken();
-            MessageBox.Show("De stapels werd leeg gemaakt.");
+            MessageBox.Show("De stapel werd leeg gemaakt.");
         }
 
         private void btn_toon_int_Click(object sender, EventArgs e)
@@ -73,7 +74,7 @@ namespace Oefening2
         private void btn_leegmaken_str_Click(object sender, EventArgs e)
         {
             listString.Leegmaken();
-            MessageBox.Show("De stapels werd leeg gemaakt.");
+            MessageBox.Show("De stapel werd leeg gemaakt.");
         }
 
         private void btn_toon_str_Click(object sender, EventArgs e)
@@ -92,6 +93,43 @@ namespace Oefening2
             Stapel<String> listString_copy = new Stapel<String>();
             listString_copy = listString.Copy();
             MessageBox.Show(listString_copy.ToString());
+        }
+
+        private void btn_toevoegen_obj_Click(object sender, EventArgs e)
+        {
+            listObj.voegToe(new TestClass(tb_obj.Text));
+        }
+
+        private void btn_verwijderen_obj_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(listObj.Verwijderen().ToString());
+        }
+
+        private void btn_leegmaken_obj_Click(object sender, EventArgs e)
+        {
+            listObj.Leegmaken();
+            MessageBox.Show("De stapel werd leeg gemaakt.");
+        }
+
+        private void btn_toon_obj_Click(object sender, EventArgs e)
+        {
+            tb_res_obj.Text = listObj.ToString();
+            MessageBox.Show(tb_res_obj.Text = listObj.ToString());
+        }
+
+        private void btn_aanwezig_obj_Click(object sender, EventArgs e)
+        {
+            TestClass test = new TestClass(tb_obj.Text);
+            bool aanwezig = listObj.isAanwezig(test);
+            MessageBox.Show(aanwezig.ToString());
+
+        }
+
+        private void btn_copy_obj_Click(object sender, EventArgs e)
+        {
+            Stapel<TestClass> listObj_copy = new Stapel<TestClass>();
+            listObj_copy = listObj.Copy();
+            MessageBox.Show(listObj_copy.ToString());
         }
     }
 }
