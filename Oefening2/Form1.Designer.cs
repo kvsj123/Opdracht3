@@ -52,6 +52,12 @@
             this.btn_leegmaken_obj = new System.Windows.Forms.Button();
             this.btn_verwijderen_obj = new System.Windows.Forms.Button();
             this.btn_toevoegen_obj = new System.Windows.Forms.Button();
+            this.tb_res_int = new System.Windows.Forms.TextBox();
+            this.tb_res_string = new System.Windows.Forms.TextBox();
+            this.tb_res_obj = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -140,6 +146,7 @@
             this.btn_toon_int.TabIndex = 9;
             this.btn_toon_int.Text = "Toon";
             this.btn_toon_int.UseVisualStyleBackColor = true;
+            this.btn_toon_int.Click += new System.EventHandler(this.btn_toon_int_Click);
             // 
             // btn_aanwezig_int
             // 
@@ -149,6 +156,7 @@
             this.btn_aanwezig_int.TabIndex = 10;
             this.btn_aanwezig_int.Text = "Is aanwezig?";
             this.btn_aanwezig_int.UseVisualStyleBackColor = true;
+            this.btn_aanwezig_int.Click += new System.EventHandler(this.btn_aanwezig_int_Click);
             // 
             // btn_copy_int
             // 
@@ -158,6 +166,7 @@
             this.btn_copy_int.TabIndex = 11;
             this.btn_copy_int.Text = "Copy";
             this.btn_copy_int.UseVisualStyleBackColor = true;
+            this.btn_copy_int.Click += new System.EventHandler(this.btn_copy_int_Click);
             // 
             // btn_copy_str
             // 
@@ -167,6 +176,7 @@
             this.btn_copy_str.TabIndex = 17;
             this.btn_copy_str.Text = "Copy";
             this.btn_copy_str.UseVisualStyleBackColor = true;
+            this.btn_copy_str.Click += new System.EventHandler(this.btn_copy_str_Click);
             // 
             // btn_aanwezig_str
             // 
@@ -176,6 +186,7 @@
             this.btn_aanwezig_str.TabIndex = 16;
             this.btn_aanwezig_str.Text = "Is aanwezig?";
             this.btn_aanwezig_str.UseVisualStyleBackColor = true;
+            this.btn_aanwezig_str.Click += new System.EventHandler(this.btn_aanwezig_str_Click);
             // 
             // btn_toon_str
             // 
@@ -185,6 +196,7 @@
             this.btn_toon_str.TabIndex = 15;
             this.btn_toon_str.Text = "Toon";
             this.btn_toon_str.UseVisualStyleBackColor = true;
+            this.btn_toon_str.Click += new System.EventHandler(this.btn_toon_str_Click);
             // 
             // btn_leegmaken_str
             // 
@@ -194,6 +206,7 @@
             this.btn_leegmaken_str.TabIndex = 14;
             this.btn_leegmaken_str.Text = "Leegmaken";
             this.btn_leegmaken_str.UseVisualStyleBackColor = true;
+            this.btn_leegmaken_str.Click += new System.EventHandler(this.btn_leegmaken_str_Click);
             // 
             // btn_verwijderen_str
             // 
@@ -203,6 +216,7 @@
             this.btn_verwijderen_str.TabIndex = 13;
             this.btn_verwijderen_str.Text = "Verwijderen";
             this.btn_verwijderen_str.UseVisualStyleBackColor = true;
+            this.btn_verwijderen_str.Click += new System.EventHandler(this.btn_verwijderen_str_Click);
             // 
             // btn_toevoegen_str
             // 
@@ -212,6 +226,7 @@
             this.btn_toevoegen_str.TabIndex = 12;
             this.btn_toevoegen_str.Text = "Toevoegen";
             this.btn_toevoegen_str.UseVisualStyleBackColor = true;
+            this.btn_toevoegen_str.Click += new System.EventHandler(this.btn_toevoegen_str_Click);
             // 
             // btn_copy_obj
             // 
@@ -267,11 +282,65 @@
             this.btn_toevoegen_obj.Text = "Toevoegen";
             this.btn_toevoegen_obj.UseVisualStyleBackColor = true;
             // 
+            // tb_res_int
+            // 
+            this.tb_res_int.Location = new System.Drawing.Point(100, 443);
+            this.tb_res_int.Name = "tb_res_int";
+            this.tb_res_int.Size = new System.Drawing.Size(337, 23);
+            this.tb_res_int.TabIndex = 24;
+            // 
+            // tb_res_string
+            // 
+            this.tb_res_string.Location = new System.Drawing.Point(100, 485);
+            this.tb_res_string.Name = "tb_res_string";
+            this.tb_res_string.Size = new System.Drawing.Size(337, 23);
+            this.tb_res_string.TabIndex = 25;
+            // 
+            // tb_res_obj
+            // 
+            this.tb_res_obj.Location = new System.Drawing.Point(100, 526);
+            this.tb_res_obj.Name = "tb_res_obj";
+            this.tb_res_obj.Size = new System.Drawing.Size(337, 23);
+            this.tb_res_obj.TabIndex = 26;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(50, 446);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 15);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Integer";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(50, 529);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(42, 15);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Object";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(50, 488);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 15);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "String";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(897, 579);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.tb_res_obj);
+            this.Controls.Add(this.tb_res_string);
+            this.Controls.Add(this.tb_res_int);
             this.Controls.Add(this.btn_copy_obj);
             this.Controls.Add(this.btn_aanwezig_obj);
             this.Controls.Add(this.btn_toon_obj);
@@ -329,5 +398,11 @@
         private Button btn_leegmaken_obj;
         private Button btn_verwijderen_obj;
         private Button btn_toevoegen_obj;
+        private TextBox tb_res_int;
+        private TextBox tb_res_string;
+        private TextBox tb_res_obj;
+        private Label label4;
+        private Label label5;
+        private Label label6;
     }
 }

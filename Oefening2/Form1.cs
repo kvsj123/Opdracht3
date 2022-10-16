@@ -18,22 +18,80 @@ namespace Oefening2
         }
 
         Stapel<int> listInt = new Stapel<int>();
+        Stapel<String> listString = new Stapel<String>();
 
         private void btn_toevoegen_int_Click(object sender, EventArgs e)
         {
-            listInt.voegToe(int.Parse(tb_int.Text));
+            int int_var = int.Parse(tb_int.Text);
+
+            listInt.voegToe(int_var);
 
         }
 
         private void btn_verwijderen_int_Click(object sender, EventArgs e)
         {
-            int verwijder_int = listInt.Verwijderen();
-            tb_int.Text = verwijder_int.ToString();
+            int removedInt = listInt.Verwijderen();
+            MessageBox.Show("Verwijderde int: " + removedInt.ToString());
         }
 
         private void btn_leegmaken_int_Click(object sender, EventArgs e)
         {
+           listInt.Leegmaken();
+            MessageBox.Show("De stapels werd leeg gemaakt.");
+        }
 
+        private void btn_toon_int_Click(object sender, EventArgs e)
+        {
+            tb_res_int.Text = listInt.ToString();
+            MessageBox.Show(tb_res_int.Text = listInt.ToString());
+        }
+
+        private void btn_aanwezig_int_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(tb_int.Text);
+            bool aanwezig = listInt.isAanwezig(x);
+            MessageBox.Show(aanwezig.ToString());
+        }
+
+        private void btn_copy_int_Click(object sender, EventArgs e)
+        {
+            Stapel<int> listInt_copy = new Stapel<int>();
+            listInt_copy = listInt.Copy();
+            MessageBox.Show(listInt_copy.ToString());
+        }
+
+        private void btn_toevoegen_str_Click(object sender, EventArgs e)
+        {
+            listString.voegToe(tb_str.Text);
+        }
+
+        private void btn_verwijderen_str_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Verwijderde int: " + listString.Verwijderen().ToString());
+        }
+
+        private void btn_leegmaken_str_Click(object sender, EventArgs e)
+        {
+            listString.Leegmaken();
+            MessageBox.Show("De stapels werd leeg gemaakt.");
+        }
+
+        private void btn_toon_str_Click(object sender, EventArgs e)
+        {
+            tb_res_string.Text = listString.ToString();
+            MessageBox.Show(tb_res_string.Text = listString.ToString());
+        }
+
+        private void btn_aanwezig_str_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(listString.isAanwezig(tb_str.Text).ToString());
+        }
+
+        private void btn_copy_str_Click(object sender, EventArgs e)
+        {
+            Stapel<String> listString_copy = new Stapel<String>();
+            listString_copy = listString.Copy();
+            MessageBox.Show(listString_copy.ToString());
         }
     }
 }

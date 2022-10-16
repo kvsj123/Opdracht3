@@ -24,7 +24,7 @@ namespace Oefening2
             return del;
         }
 
-        public void Leegmaken(T allesWissen)
+        public void Leegmaken()
         {
             list.Clear();
         }
@@ -48,7 +48,7 @@ namespace Oefening2
 
         public override string ToString()
         {
-            return String.Join(" + ", list);
+            return String.Join(" , ", list);
         }
     }
 }
